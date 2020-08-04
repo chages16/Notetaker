@@ -5,10 +5,10 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/notes.html"));
   });
 
-  //doublechecking html routes due to pc issues (not required code)
+  /* //doublechecking html routes due to pc issues (not required code)
     app.get("/uselesstest", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/notes.html"));
-  });
+  }); */
 
   // Display index.html when all other routes are accessed
   app.get("*", function (req, res) {
