@@ -6,7 +6,7 @@ module.exports = function (app) {
   });
 
   //doublechecking html routes due to pc issues (not required code)
-    app.get("uselesstest", function (req, res) {
+    app.get("/uselesstest", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/notes.html"));
   });
 
